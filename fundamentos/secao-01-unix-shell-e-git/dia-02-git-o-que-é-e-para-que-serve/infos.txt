@@ -1,0 +1,11 @@
+Passo-a-passo para realizar o versionamento do projeto!
+
+1º Ter uma pasta versionada. Para realizar, acesse a pasta escolhida e utilize o comando git init.
+
+2º Crie uma branch. Para realizar, utilize os comando git branch nome-da-branch e git checkout nome-da-branch. É possível utilizar o comando git checkout -b nome-da-branch, que faz uma junção dos dois comandos anteriores.
+
+3º Faça as alteração necessárias no projeto e coloque os arquivos em staing. Para realizer, utilize o comando git add nome-do-arquivo ou git add . para adicionar todos os arquivos inseridos e/ou modificados.
+
+4º Faça um commit ('Comentário'), de forma objetiva, para que fique registrada as alterações feitas no projeto. Para realizar, utilize o comando git commit -m 'Comentário das alterações'.
+
+5º Faça o merge com a main para fundir os novos arquivos. Para realizar, acesse a main e utilize o comando git merge nome-da-branch.
