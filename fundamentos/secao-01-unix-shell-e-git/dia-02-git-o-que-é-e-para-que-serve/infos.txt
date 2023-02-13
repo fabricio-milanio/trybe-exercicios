@@ -9,3 +9,5 @@ Passo-a-passo para realizar o versionamento do projeto!
 4º Faça um commit ('Comentário'), de forma objetiva, para que fique registrada as alterações feitas no projeto. Para realizar, utilize o comando git commit -m 'Comentário das alterações'.
 
 5º Faça o merge com a main para fundir os novos arquivos. Para realizar, acesse a main e utilize o comando git merge nome-da-branch.
+
+ps.: Nunca realize um commit diretamente na main, muito menos realize comitão bomba. Fica a dica!
