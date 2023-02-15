@@ -4,7 +4,6 @@ h1, p {
 
 li:hover {
     background-color: chartreuse;
-    transition: ease-in-out;
 }
 
 li:active {
