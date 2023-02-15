@@ -1,6 +1,6 @@
 div:hover {
-    border-style: dashed;
-    border-width: 1px;
+    border-style: dotted;
+    border-width: 5px;
     border-color: black;
 }
 
@@ -8,18 +8,51 @@ div:hover {
     background-color: red;
 }
 
+.div01 h3 {
+    color: yellow;
+    font-size: 20px;
+}
+
 .div02 {
     background-color: yellow;
+}
+
+.div02 h3 {
+    color: green;
+    font-size: 40px;
+    font-family: monospace;
 }
 
 .div03 {
     background-color: aquamarine;
 }
 
+.div03 h3 {
+    color: tomato;
+    font-size: 60px;
+    font-family: impact;
+}
+
 .div04 {
     background-color: blue;
 }
 
+.div04 h3 {
+    color: white;
+    font-size: 50px;
+    font-family: cursive;
+}
+
 .div05 {
     background-color: skyblue;
+}
+
+.div05 h3 {
+    color: antiquewhite;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div {
+    font-style: italic;
 }
