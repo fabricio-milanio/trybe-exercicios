@@ -4,55 +4,40 @@ div:hover {
     border-color: black;
 }
 
-.div01 {
+div:nth-of-type(1) {
     background-color: red;
-}
-
-.div01 h3 {
     color: yellow;
     font-size: 20px;
 }
 
-.div02 {
+div:nth-of-type(2) {
     background-color: yellow;
-}
-
-.div02 h3 {
     color: green;
     font-size: 40px;
     font-family: monospace;
 }
 
-.div03 {
+div:nth-of-type(3) {
     background-color: aquamarine;
-}
-
-.div03 h3 {
     color: tomato;
     font-size: 60px;
     font-family: impact;
 }
 
-.div04 {
+div:nth-of-type(4) {
     background-color: blue;
-}
-
-.div04 h3 {
     color: white;
     font-size: 50px;
     font-family: cursive;
 }
 
-.div05 {
+div:nth-of-type(5) {
     background-color: skyblue;
-}
-
-.div05 h3 {
     color: antiquewhite;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-div {
+div:nth-child(odd) {
     font-style: italic;
 }
