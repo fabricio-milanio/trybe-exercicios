@@ -1,8 +1,8 @@
 h1 {
     text-align: center;
-  }
+}
 
-  .first {
+.first {
     background-color: rgb(235, 200, 84);
     font-size: 20px;
     height: 50px;
@@ -10,22 +10,36 @@ h1 {
     width: 200px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-  .second {
+.second {
     background-color: rgb(219, 219, 219);
     font-size: 20px;
     height: 50px;
     text-align: center;
     width: 300px;
     display: inline-block;
-  }
+}
 
-  .third {
+.third {
     background-color: rgb(170, 142, 106);
     font-size: 20px;
     height: 50px;
     text-align: center;
     width: 300px;
     display: inline-block;
-  }
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.award ul li {
+    text-align: center;
+    display: inline;
+}
