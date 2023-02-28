@@ -10,3 +10,9 @@ console.log(indexOfPortfolio);
 menu.push('Contato');
 
 console.log(menu);
+
+let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia', 'Couve'];
+
+for (let count = 0; count < groceryList.length; count += 1) {
+    console.log(groceryList[count]);
+}
