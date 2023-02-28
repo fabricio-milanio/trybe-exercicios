@@ -45,14 +45,34 @@ if (a4 < 0 || b4 < 0 || c4 < 0) {
 }
 
 //Quinto Exercício
-let a5 = 'rei';
+let a5 = 'Cavalo'.toLowerCase();
 
 switch (a5) {
     case 'rei':
-        console.log('Movimenta na horizontal, vertical ou diagonal uma casa por vez');
+        console.log('Movimenta na horizontal, vertical ou diagonal uma casa por vez.');
+        break;
+
+    case 'rainha':
+        console.log('Movimenta na horizontal, vertical ou diagonal quantas casas quiser, desde que estejam livres.');
+        break;
+
+    case 'torre':
+        console.log('Movimenta em linha reta na horizontal ou vertical, quantas casas quiser.');
+        break;
+
+    case 'bispo':
+        console.log('Movimenta na diagonal quantas casas quiser.');
+        break;
+
+    case 'cavalo':
+        console.log('Movimenta-se em L, podendo ser 2 casas na vertical e 1 na horizontal ou o inverso, além de poder saltar sobre outras peças, sejam elas amigas ou inimigas.');
+        break;
+
+    case 'peao':
+        console.log('Movimenta-se sempre uma casa para frente, exceto no primeiro movimento, quando pode se mover duas casas. Além disso é o único que não pode retroceder.');
         break;
 
     default:
-        console.log('Não é uma peça de xadrez');
+        console.log('Não é uma peça de xadrez.');
         break;
 }
