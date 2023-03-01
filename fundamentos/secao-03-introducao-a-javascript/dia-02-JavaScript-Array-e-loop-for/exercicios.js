@@ -59,3 +59,39 @@ console.log(newNumber);
 for (let index = 0; index < newNumber.length; index += 1) {
     console.log('O número ', newNumber[index], ' dividido por 2 é = ', (newNumber[index]/2));
 }
+
+//imprime na tela o fatorial de 10
+let result = 1;
+
+for (let index = 12; index >= 2; index -= 2) {
+    result = result * (index*(index-1))
+}
+console.log(result);
+
+//código que inverte a palavra
+let word = 'funciona';
+let newWord = '';
+
+for (let index = 0; index < word.length; index += 1) {
+    newWord = word[index] + newWord;
+}
+
+console.log(newWord);
+
+//imprimi maior e menor palavra do array
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let bigWord = '', smallWord = 'dfgshfgjyhgstrhghfsjfdhghggfddshsdgfshsfgdfshretwgf';
+
+for (let index = 0; index < array.length; index += 1) {
+    if (array[index].length > bigWord.length) {
+        bigWord = array[index];
+    }
+}
+console.log(bigWord);
+
+for (let index = 0; index < array.length; index += 1) {
+    if (array[index].length < smallWord.length) {
+        smallWord = array[index];
+    }
+}
+console.log(smallWord);
