@@ -171,3 +171,52 @@ for (let index = 0; index < n; index += 1) {
     otherNewForm = '';
     position = position - 1;
 }
+
+//imprime triangulo com interior vazio
+let n = 7;
+let middle = (n + 1) / 2;
+let controlLeft = middle;
+let controlRight = middle;
+let symbol = '*';
+for (let line = 1; line <= middle; line += 1) {
+  let outputLine = '';
+  for (let col = 1; col <= n; col += 1) {
+    if (col == controlLeft || col == controlRight || line == middle) {
+      outputLine += symbol;
+    } else {
+      outputLine += ' ';
+    }
+  }
+  controlLeft -= 1;
+  controlRight += 1;
+  console.log(outputLine);
+}
+
+//identifica números primos
+let divisors = 1;
+let numberToCheck = 31;
+
+for (let number = 2; number <= numberToCheck; number += 1) {
+  if (numberToCheck % number === 0) divisors += 1;
+}
+
+if (divisors === 2) console.log(numberToCheck + ' é primo');
+else console.log(numberToCheck + ' não é primo');
+
+//identifica o maior número primo
+let biggestPrimeNumber = 0;
+
+for (let currentNumber = 50; currentNumber >= 2; currentNumber -= 1) {
+  let isPrime = true;
+  for (let currentDivisor = 2; currentDivisor < currentNumber; currentDivisor += 1) {
+    if (currentNumber % currentDivisor === 0) {
+      isPrime = false;
+    }
+  }
+  if (isPrime) {
+    biggestPrimeNumber = currentNumber;
+    break; // O break finaliza a execução do laço For
+  }
+}
+
+console.log(biggestPrimeNumber);
