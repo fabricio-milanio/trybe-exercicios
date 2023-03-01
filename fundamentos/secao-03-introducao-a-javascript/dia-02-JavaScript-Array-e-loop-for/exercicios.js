@@ -80,18 +80,94 @@ console.log(newWord);
 
 //imprimi maior e menor palavra do array
 let array = ['java', 'javascript', 'python', 'html', 'css'];
-let bigWord = '', smallWord = 'dfgshfgjyhgstrhghfsjfdhghggfddshsdgfshsfgdfshretwgf';
+let bigWord = array[0], smallWord = array[0];
 
-for (let index = 0; index < array.length; index += 1) {
+for (let index = 1; index < array.length; index += 1) {
     if (array[index].length > bigWord.length) {
         bigWord = array[index];
     }
 }
 console.log(bigWord);
 
-for (let index = 0; index < array.length; index += 1) {
+for (let index = 1; index < array.length; index += 1) {
     if (array[index].length < smallWord.length) {
         smallWord = array[index];
     }
 }
 console.log(smallWord);
+
+//ordena o array de forma crescente e decrescente
+let aux;
+
+for (let index = 1; index < numbers.length; index += 1){
+    for (let index = 0; index < numbers.length; index += 1) {
+        if (numbers[index] > numbers[index +1]) {
+            aux = numbers[index];
+            numbers[index] = numbers[index + 1];
+            numbers[index + 1] = aux;
+        }
+    }
+}
+console.log(numbers);
+
+for (let index = 1; index < numbers.length; index += 1){
+    for (let index = 0; index < numbers.length; index += 1) {
+        if (numbers[index] < numbers[index +1]) {
+            aux = numbers[index];
+            numbers[index] = numbers[index + 1];
+            numbers[index + 1] = aux;
+        }
+    }
+}
+console.log(numbers);
+
+//utiliza valore de um array para cria novos valores a um novo array
+let otherNumbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let newNumbers = [], newAux;
+
+for (let index = 0; index < otherNumbers.length; index += 1){
+        if (index < otherNumbers.length-1) {
+        newAux = otherNumbers[index] * otherNumbers[index + 1];
+        newNumbers.push(newAux);
+    } else if (index === otherNumbers.length-1) {
+        newAux = otherNumbers[index] * 2;
+        newNumbers.push(newAux);
+    }
+}
+console.log(newNumbers);
+
+//imprime forma geométrica 'quadrado'
+let nForm = 5, form = '';
+
+for (let index = 0; index < nForm; index += 1) {
+    form = form + ('*');
+}    
+for (let index = 0; index < nForm; index += 1) {
+    console.log(form);
+    }
+
+//imprime forma geométrica 'quadrado'
+let newForm = '';
+let n = 5;
+let position = n - 1;
+
+for (let index = 0; index < n; index += 1) {
+    newForm = newForm + ('*');
+    console.log(newForm);
+}
+
+//imprime formas geométricas 'metade do triangulo esquerdo e direito'
+let otherNewForm = '';
+
+for (let index = 0; index < n; index += 1) {
+    for (indexSpace = 0; indexSpace < n; indexSpace += 1) {
+        if (indexSpace < position) {
+            otherNewForm = otherNewForm + ' ';
+        } else {
+            otherNewForm = otherNewForm + '*';
+        }
+    }
+    console.log(otherNewForm);
+    otherNewForm = '';
+    position = position - 1;
+}
