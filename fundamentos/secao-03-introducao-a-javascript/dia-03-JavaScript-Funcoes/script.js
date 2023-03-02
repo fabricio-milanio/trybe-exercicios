@@ -45,23 +45,39 @@ function addClient (name) {
     }
 }
 
-function deletClient(cliente) {
-  if (typeof cliente === 'string') {
-    let clienteEncontrado = false;
+console.log(addClient('Gabigol'));
+console.log(clientesTrybeBank);
+
+function verifyString(client) {
+    if (typeof client !== 'string') {
+        return 'O parâmetro passado deve ser do tipo "string"!';
+    } else {
+        return true;
+        }    
+}
+
+function indexClient(client) {
     for (let index = 0; index < clientesTrybeBank.length; index += 1) {
-      if (cliente === clientesTrybeBank[index]) {
-        clientesTrybeBank.splice(index, 1);
-        clienteEncontrado = true;
-        return 'Cliente excluída(o) com sucesso.';
-      }
+        if (client === clientesTrybeBank[index]) {
+           return index;
+        }
+    }
+    return false;
+}
+
+function deletClient(client) {
+    let valedateString = verifyString(client);
+    if (valedateString !== true) {
+        return valedateString;
     }
 
-    if (clienteEncontrado === false) {
-      return 'Cliente não encontrada(o)'
+    let index = indexClient(client);
+    if (index === false) {
+        return 'Cliente não encontrado!'
     }
-  } else {
-    return 'O parâmetro passado deve ser do tipo "string"!';
-  }
+
+    clientesTrybeBank.splice(index, 1);
+    return 'Cliente excluída(o) com sucesso.';
 };
 
 console.log(deletClient(false)); // O parâmetro passado deve ser do tipo "string"!
